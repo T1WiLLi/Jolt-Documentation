@@ -1,54 +1,31 @@
-# React + TypeScript + Vite
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=T1WiLLi_Jolt&metric=coverage)](https://sonarcloud.io/summary/new_code?id=T1WiLLi_Jolt)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=T1WiLLi_Jolt&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=T1WiLLi_Jolt)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=T1WiLLi_Jolt&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=T1WiLLi_Jolt)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=T1WiLLi_Jolt&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=T1WiLLi_Jolt)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=T1WiLLi_Jolt&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=T1WiLLi_Jolt)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# **Jolt** is a lightweight Java-based web application framework.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to Jolt, a lightweight and powerful Java web framework designed to simplify the development of modern web applications. Jolt provides a robust set of tools and features to help you build scalable, maintainable, and high-performance applications with ease.
 
-## Expanding the ESLint configuration
+## A bit about Jolt
+Hi ! I'm T1WiLLi, the creator of Jolt. I started working on Jolt, not because I wanted to create somethings for others, but because at the time I was actually working a lot with the Spring framework, which, I must say, is probably the best Java framework out there. However, people that know me, know that I've always loved to learn and experiment with new things. So, as I started learning Spring, I also started to wonder, how did they do this ? How did they make it so powerful ? And, I started to think, what if I could do something similar, but with a more lightweight approach ? And, that's how Jolt was born. Of course, the idea of creating a new framework was a bit scary at first, but, I was convinced that I could make something that would help me get a better understanding of how web frameworks work, and, maybe, even help others.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+***And, that's exactly what I did.***
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Key Features
+ - #### Simple and intuitive API for rapid development
+ - #### Built-in dependency injection for better modularity
+ - #### Powerful routing system for handling complex URL patterns
+ - #### Support for filters for request processing
+ - #### Seamless integration with external APIs and services
+ - #### High concern for security and data protection
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Documentation : https://jolt-framework.org
+<br>
+Maven Central Repository : https://central.sonatype.com/artifact/io.github.t1willi/jolt/overview
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
