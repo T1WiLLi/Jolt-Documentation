@@ -6,6 +6,7 @@ import Filters from "../sections/fc/Filters"
 import Forms from "../sections/fc/Forms"
 import Localization from "../sections/fc/Localization"
 import Logging from "../sections/fc/Logging"
+import SessionManagement from "../sections/fc/Session"
 import TemplatingEngine from "../sections/fc/TemplatingEngine"
 
 function FrameworkComponent() {
@@ -20,6 +21,7 @@ function FrameworkComponent() {
             <Database />
             <TemplatingEngine />
             <Localization />
+            <SessionManagement />
         </div>
     )
 }

@@ -54,7 +54,7 @@ public class CustomFilterConfiguration extends FilterConfiguration {
                         ctx.getHeader("User-Agent").contains("Bot"));
 
         // Set filter order
-        setOrder(1, new AuthFilter());
+        setOrder(1, AuthFilter.class);
     }
 }
     `.trim();
@@ -66,7 +66,7 @@ public class MyApp extends JoltApplication {
     }
 
     @Override
-    protected void setup() {
+    protected void init() {
         // Define routes
         get("/api/users", ctx -> ctx.text("User list"));
         get("/login", ctx -> ctx.text("Login page"));

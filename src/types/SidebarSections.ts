@@ -1,4 +1,4 @@
-import { Database, FileSliders, LayoutTemplate, LucideIcon } from 'lucide-react';
+import { Database, FileSliders, LayoutTemplate, LucideIcon, User } from 'lucide-react';
 import {
     LayoutDashboard,
     Folder,
@@ -64,6 +64,7 @@ export const sidebarElements: SidebarGroup[] = [
             { label: "Database", link: "database", icon: Database },
             { label: "Templating Engine", link: "templating-engine", icon: LayoutTemplate },
             { label: "Localization", link: "localization", icon: Languages },
+            { label: "Session", link: "session", icon: User },
             { label: "Security", link: "security", icon: Lock },
             { label: "Configuration", link: "configuration", icon: FileSliders },
         ],

@@ -59,7 +59,7 @@ public class MyApp extends JoltApplication {
     }
 
     @Override
-    protected void setup() {
+    protected void init() {
         post("/register", ctx -> {
             Form form = ctx.buildForm();
             

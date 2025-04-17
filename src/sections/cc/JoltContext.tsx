@@ -4,11 +4,11 @@ import CodeBlock from '../../lib/CodeBlock';
 
 function JoltContext() {
     const exampleCode1 = `
-get("/user/{id:int}", ctx -> ctx.html("Hi user #" + ctx.path("id").asInt()));
+get("/user/{id}", ctx -> ctx.html("Hi user #" + ctx.path("id")));
     `.trim();
 
     const exampleCode2 = `
-get("/user/{id:int}", ctx -> {
+get("/user/{id}", ctx -> {
     int userId = ctx.path("id").asInt();
     return ctx.json(new User(userId, "John Doe")).status(HttpStatus.CREATED);
 });
@@ -58,7 +58,7 @@ get("/page", ctx -> {
     `.trim();
 
     const exampleCode8 = `
-get("/user/{id:int}", ctx -> {
+get("/user/{id}", ctx -> {
     int userId = ctx.path("id").asInt();
     if (userId <= 0) {
         ctx.abortNotFound("User not found");

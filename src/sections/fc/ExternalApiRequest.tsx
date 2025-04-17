@@ -49,7 +49,7 @@ public class MyApp extends JoltApplication {
     }
 
     @Override
-    protected void setup() {
+    protected void init() {
         JoltContainer container = JoltContainer.getInstance();
         container.autoScan();
         container.initialize();

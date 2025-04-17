@@ -11,9 +11,9 @@ public class MyApp extends JoltApplication {
     }
 
     @Override
-    protected void setup() {
+    protected void init() {
         get("/", ctx -> ctx.plain("Hello, World!"));
-        get("/user/{id}", ctx -> ctx.html("Hello, User #" + ctx.path("id").get()));
+        get("/user/{id}", ctx -> ctx.html("Hello, User #" + ctx.path("id")));
     }
 }
     `.trim();

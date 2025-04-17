@@ -65,7 +65,7 @@ public class MyApp extends JoltApplication {
     }
 
     @Override
-    protected void setup() {
+    protected void init() {
         get("/welcome", ctx -> {
             JoltModel model = new JoltModel();
             Map<String, Object> user = new HashMap<>();

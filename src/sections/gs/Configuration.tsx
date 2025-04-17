@@ -28,12 +28,20 @@ function Configuration() {
             { key: 'server.threads.max', defaultValue: '100', description: 'Maximum number of threads in the thread pool' },
             { key: 'server.threads.timeout', defaultValue: '60000', description: 'Thread timeout in milliseconds' },
             { key: 'server.daemon', defaultValue: 'true', description: 'Run server threads as daemon threads' },
-            { key: 'server.appName', defaultValue: 'Jolt', description: 'Application name used for logging and identification' }
+            { key: 'server.appName', defaultValue: 'Jolt', description: 'Application name used for logging and identification' },
+            { key: 'server.logging.level', defaultValue: 'INFO', description: 'Logging level within the console application' },
+            { key: 'server.logging.logfile', defaultValue: 'jolt.log', description: 'Path to the log file which log ALL level' },
         ],
         security: [
             { key: 'server.security.secret_key', defaultValue: '<random-base64-value>', description: 'Secret key used for various security operations (auto-generated if not specified)' },
             { key: 'server.security.pepper', defaultValue: '<random-base64-value>', description: 'Cryptographic pepper for password hashing (auto-generated if not specified)' },
-            { key: 'server.security.encryption_key', defaultValue: '<random-base64-value>', description: 'Key used for data encryption (auto-generated if not specified)' }
+            { key: 'server.security.encryption_key', defaultValue: '<random-base64-value>', description: 'Key used for data encryption (auto-generated if not specified)' },
+            { key: 'server.http.enabled', defaultValue: 'true', description: 'Enable/disable HTTP support. If disabled, only HTTPS will be supported.' },
+            { key: 'session.lifetime', defaultValue: '1800', description: 'Session lifetime in minutes (30 minutes by default) ' },
+            { key: 'session.httponly', defaultValue: 'true', description: 'Enable/disable HTTPOnly flag for session cookies' },
+            { key: 'session.secure', defaultValue: 'true', description: 'Enable/disable Secure flag for session cookies' },
+            { key: 'session.path', defaultValue: '/', description: 'Path for session cookies' },
+            { key: 'session.samesite', defaultValue: 'Strict', description: 'SameSite attribute for session cookies' },
         ],
         database: [
             { key: 'db.url', defaultValue: 'Na', description: 'Database URL, e.g. jdbc:mysql://localhost:3306/mydb' },

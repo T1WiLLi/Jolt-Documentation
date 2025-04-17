@@ -75,7 +75,7 @@ function Installation() {
                         <CodeBlock code="<dependency>
     <groupId>io.github.t1willi</groupId>
     <artifactId>jolt</artifactId>
-    <version>2.5.6</version>
+    <version>2.5.9</version>
 </dependency>" language='xml' />
                         <p className="text-yellow-400 mt-3">
                             <strong>Warning:</strong> You'll need to manually create a <code className="text-blue-400 bg-gray-800 px-1 rounded">Dockerfile</code> and ensure your <code className="text-blue-400 bg-gray-800 px-1 rounded">pom.xml</code> is properly configured for deployment, which can be error-prone.

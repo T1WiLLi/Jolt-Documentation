@@ -26,7 +26,7 @@ function Sidebar({ sections }: { sections: SidebarGroup[] }) {
                     {!isCollapsed && (
                         <div className="flex flex-col">
                             <span className="text-2xl font-bold text-white-400">Jolt</span>
-                            <span className="text-xs text-gray-500">documentation V2.5.6</span>
+                            <span className="text-xs text-gray-500">documentation V2.5.9</span>
                         </div>
                     )}
                     <button
